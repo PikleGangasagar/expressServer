@@ -25,7 +25,10 @@ app.get('/',(req,res,next)=>{
 
 app.get('/about',(req,res,next)=>{
     //res.send("this is about page")
-    res.render("about");
+    res.render("about",{
+        myName:"Panchashil Wankhede",
+        post:"Trainer"
+    });
 });
 app.get('/service',(req,res,next)=>{
     //res.send("this is service page")
